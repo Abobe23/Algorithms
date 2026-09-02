@@ -35,6 +35,21 @@ int main()
         return 1;
     }
 
+    item = list_last(list);
+    if (!item)
+    {
+        std::cout << "list_insert error\n";
+        list_delete(list);
+        return 1;
+    }
+
+    if (*(int*)list_item_data(item) != 1)
+    {
+        std::cout << "list_insert error\n";
+        list_delete(list);
+        return 1;
+    }
+
     list_insert_after(list, list_first(list), new int(4));
 
     item = list_item_next(list_first(list));

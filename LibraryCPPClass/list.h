@@ -34,6 +34,9 @@ public:
     // Retrieves the first item from the list
     Item *first();
 
+    // Retrieves the last item of the list
+    Item *last();
+
     // Inserts new list item into the beginning
     Item *insert(Data data);
 

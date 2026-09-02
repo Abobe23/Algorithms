@@ -25,6 +25,9 @@ void list_delete(List *list);
 // Retrieves the first item from the list
 ListItem *list_first(List *list);
 
+// Retrieves the last item from the list
+ListItem *list_last(List *list);
+
 // Extracts data from the list item
 Data list_item_data(const ListItem *item);
 

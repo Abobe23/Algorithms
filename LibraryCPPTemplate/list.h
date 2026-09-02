@@ -41,6 +41,12 @@ public:
         return nullptr;
     }
 
+    // Retrieves the last item of the list
+    Item *last()
+    {
+        return nullptr;
+    }
+
     // Inserts new list item into the beginning
     Item *insert(Data data)
     {

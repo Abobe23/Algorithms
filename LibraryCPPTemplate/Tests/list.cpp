@@ -25,6 +25,12 @@ int main()
         return 1;
     }
 
+    if (list->last()->data() != 1)
+    {
+        std::cout << "list_insert error\n";
+        return 1;
+    }
+
     list->insert_after(list->first(), 4);
 
     if (list->first()->next()->data() != 4)
